@@ -1,6 +1,9 @@
-const removeFromArray = function(arr, n) {
-    let arrNew = arr.splice(n);
-    return arrNew;
+const removeFromArray = function(arr, item) {
+    let index = arr.indexOf(item);
+    if (index > -1) {
+        arr.splice(index, 1);
+        return arr;
+    }
 };
 
 // Do not edit below this line
