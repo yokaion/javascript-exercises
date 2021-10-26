@@ -1,13 +1,13 @@
 const sumAll = function(a, b) {
     //create an array for elements between a and b;
-    const arrAB = [];
+    const arr = [];
     for (let i = a; i <= b; i++){
-        arrAB.push(i);
+        arr.push(i);
     }
     //sum all elements in the array;
     let sumArr = 0;
-    for (const val of arrAB){
-        sumArr += val;
+    for (const i of arr){
+        sumArr += i;
     }
     return sumArr;
 
